@@ -1,0 +1,72 @@
+[
+  {
+    "ref": "el_1",
+    "tag": "input",
+    "role": "textbox",
+    "accessible_name": "Roll Number",
+    "visible_label": "Roll Number",
+    "placeholder": "2026CS1042",
+    "input_type": "text",
+    "selector": "input#roll-number",
+    "required": true,
+    "is_sensitive": false,
+    "visible": true
+  },
+  {
+    "ref": "el_2",
+    "tag": "input",
+    "role": "textbox",
+    "accessible_name": "Full Name",
+    "visible_label": "Full Name",
+    "input_type": "text",
+    "selector": "input#full-name",
+    "required": true,
+    "is_sensitive": false,
+    "visible": true
+  },
+  {
+    "ref": "el_3",
+    "tag": "input",
+    "accessible_name": "Income Certificate",
+    "visible_label": "Upload Income Certificate",
+    "input_type": "file",
+    "selector": "input#income-certificate",
+    "required": true,
+    "is_sensitive": false,
+    "visible": true
+  },
+  {
+    "ref": "el_4",
+    "tag": "input",
+    "accessible_name": "Portal password",
+    "visible_label": "Portal password",
+    "input_type": "password",
+    "selector": "input#password",
+    "required": true,
+    "is_sensitive": true,
+    "visible": true
+  },
+  {
+    "ref": "el_5",
+    "tag": "input",
+    "accessible_name": "Enter OTP",
+    "visible_label": "Enter OTP",
+    "input_type": "text",
+    "selector": "input#otp",
+    "required": false,
+    "is_sensitive": false,
+    "visible": true
+  },
+  {
+    "ref": "el_6",
+    "tag": "button",
+    "role": "button",
+    "accessible_name": "Submit Application",
+    "visible_label": "Submit Application",
+    "input_type": "",
+    "selector": "button#submit-application",
+    "required": false,
+    "is_sensitive": false,
+    "visible": true
+  }
+]
