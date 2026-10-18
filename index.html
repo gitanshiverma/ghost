@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merit Scholarship Application 2026–27 | Northbridge University</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-name">Northbridge University</span>
+      <span class="brand-sub">Student Financial Aid Portal</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Financial Aid</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">My Application</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="#">Home</a> &gt; <a href="#">Financial Aid</a> &gt; <span>Scholarship Application</span>
+  </nav>
+
+  <h1>Merit Scholarship Application 2026–27</h1>
+
+  <div class="notice" role="note">
+    <strong>Eligibility.</strong> You must be a currently enrolled full-time student with a cumulative GPA of 3.5 or above. Applications close on 28 February 2027. Incomplete applications will not be reviewed.
+  </div>
+
+  <form id="scholarship-form" novalidate>
+    <fieldset>
+      <legend>Section 1: Student Information</legend>
+
+      <div class="field">
+        <label for="full-name">Full legal name <span class="req">(required)</span></label>
+        <input type="text" id="full-name" name="fullName" autocomplete="off" required>
+        <p class="error" id="full-name-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="university-email">University email <span class="req">(required)</span></label>
+        <input type="email" id="university-email" name="universityEmail" autocomplete="off" placeholder="name@northbridge.edu" required>
+        <p class="error" id="university-email-error" aria-live="polite"></p>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="student-id">Student ID <span class="req">(required)</span></label>
+          <input type="text" id="student-id" name="studentId" autocomplete="off" placeholder="e.g. NB2024001" required>
+          <p class="error" id="student-id-error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="current-year">Current year of study <span class="req">(required)</span></label>
+          <select id="current-year" name="currentYear" required>
+            <option value="">Select year</option>
+            <option>First year</option>
+            <option>Second year</option>
+            <option>Third year</option>
+            <option>Fourth year</option>
+            <option>Postgraduate</option>
+          </select>
+          <p class="error" id="current-year-error" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="degree-programme">Degree programme <span class="req">(required)</span></label>
+        <input type="text" id="degree-programme" name="degreeProgramme" autocomplete="off" placeholder="e.g. BSc Computer Science" required>
+        <p class="error" id="degree-programme-error" aria-live="polite"></p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Section 2: Scholarship Details</legend>
+
+      <div class="field">
+        <label for="scholarship-category">Scholarship category <span class="req">(required)</span></label>
+        <select id="scholarship-category" name="scholarshipCategory" required>
+          <option value="">Select a category</option>
+          <option>Academic Excellence</option>
+          <option>Leadership and Service</option>
+          <option>STEM Achievement</option>
+          <option>Arts and Humanities</option>
+          <option>First-Generation Student</option>
+        </select>
+        <p class="error" id="scholarship-category-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="academic-achievements">Academic achievements <span class="req">(required)</span></label>
+        <textarea id="academic-achievements" name="academicAchievements" rows="4" required></textarea>
+        <p class="hint">List honours, awards, publications or relevant projects.</p>
+        <p class="error" id="academic-achievements-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="personal-statement">Personal statement <span class="req">(required)</span></label>
+        <textarea id="personal-statement" name="personalStatement" rows="6" required></textarea>
+        <p class="hint">Minimum 50 characters.</p>
+        <p class="error" id="personal-statement-error" aria-live="polite"></p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Section 3: Supporting Documents</legend>
+
+      <div class="field">
+        <label for="academic-transcript">Academic transcript <span class="req">(required)</span></label>
+        <input type="file" id="academic-transcript" name="academicTranscript" accept=".pdf,.doc,.docx,.jpg,.png">
+        <p class="hint">PDF, Word or image. Maximum 5 MB.</p>
+        <p class="error" id="academic-transcript-error" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="supporting-document">Supporting document (optional)</label>
+        <input type="file" id="supporting-document" name="supportingDocument" accept=".pdf,.doc,.docx,.jpg,.png">
+        <p class="hint">For example, a recommendation letter or award certificate.</p>
+        <p class="error" id="supporting-document-error" aria-live="polite"></p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Section 4: Declaration</legend>
+      <div class="field check">
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">I confirm that the information provided in this application is accurate and complete.</label>
+      </div>
+      <p class="error" id="declaration-error" aria-live="polite"></p>
+    </fieldset>
+
+    <div class="actions">
+      <button type="submit" id="submit-button" class="btn primary">Submit Application</button>
+      <button type="button" id="reset-button" class="btn">Reset Form</button>
+    </div>
+  </form>
+
+  <div id="confirmation" class="confirmation" role="status" tabindex="-1" hidden>
+    <h2>Application received</h2>
+    <p>Your Merit Scholarship application has been recorded. Reference number: <strong id="reference-number"></strong>.</p>
+    <p>A confirmation will be sent to your university email address.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Northbridge University, Office of Student Financial Aid. Fictional institution for demonstration purposes.</p>
+    <p><a href="#">Privacy</a> &nbsp; <a href="#">Accessibility</a> &nbsp; <a href="#">Contact</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
